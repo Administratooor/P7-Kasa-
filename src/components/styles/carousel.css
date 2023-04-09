@@ -1,0 +1,124 @@
+.carousel {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: flex-end;
+      flex-direction: row-reverse;
+      width: 90%;
+      height: 300px;
+      border-radius: 10px;
+      margin: 10px auto;
+      background: round;
+}
+
+.carousel img {
+      width: 35px;
+      margin: 30px 15px;
+}
+
+.counterDisplay {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: white;
+}
+
+.accomodation_description {
+      display: flex;
+      width: 90%;
+      flex-direction: column;
+      color: #ff6060;
+}
+
+
+.accomodation_description_infos {
+      width: 90%;
+      margin: 0 auto;
+}
+
+h1 {
+      width: 100%;
+      font-size: 18px;
+}
+
+p {
+      color: #ff6060;
+      width: 100%;
+      font-size: 14px;
+}
+
+button {
+      width: 91px;
+      height: 18px;
+      text-align: center;
+      margin: 5px;
+      background-color: #ff6060;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      font-size: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      padding: 0px;
+}
+
+.host_information_block {
+      display: flex;
+      margin: 17px auto;
+      width: 90%;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+}
+
+.host_information {
+      display: flex;
+      align-items: center;
+}
+
+.host_information img {
+      width: 32px;
+      border-radius: 50%;
+}
+
+.host_information span {
+      padding-right: 5px;
+      font-size: 12px;
+}
+
+.host_stars img {
+      width: 14px;
+      padding-top: 10px;
+}
+
+@media screen and (min-width: 750px) {
+      .host_information_block {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 0 auto;
+            width: 90%;
+      }
+}
+
+@media screen and (min-width: 750px) {
+      .host_stars img {
+            width: 24px;
+      }
+}
+
+@media screen and (min-width: 750px) {
+      .host_information_block {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 0 auto;
+            width: 90%;
+      }
+}
+
+/* @media screen and (min-width: 750px) {
+      .host_information > div {
+            width: 18px;
+            display: block;
+      }
+} */
