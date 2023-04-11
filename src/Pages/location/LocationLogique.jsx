@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import datas from '../../data/data';
 import Slider from '../../components/carousel/Carousel';
 import Collapse from '../../components/collapse/Collapse';
@@ -7,25 +7,31 @@ import greyStar from '../../assets/grey_star.png';
 import redStar from '../../assets/red_star.png';
 
 export default function Accomodation() {
-      // Déclaration du state avec un tableau
+      let navigate = useNavigate();
+      const [dataExists, setDataExists] = useState(false);
       const [imageSlider, setImageSlider] = useState([]);
-      // Récupération de l'id
       const idParams = useParams('id').id;
-      // Récupération de l'élément qui contient le même id avec la méthode filter
       const dataSelection = datas.filter((data) => data.id === idParams);
 
       useEffect(() => {
-            const dataSelection = datas.filter((data) => data.id === idParams);
-            //On stock les url des images setImageSlider
+            // Si l'élément n'existe pas > navigate page not-found qui correspond à rien/tout le reste *
+            if (dataSelection.length === 0) {
+                  navigate('/not-found');
+                  return;
+            }
+            // dataExists true si l'élément existe
+            setDataExists(true);
+            // Enregistrement de/des valeurs dans setter
             setImageSlider(dataSelection[0].pictures);
-      }, [idParams]);
-      // Supression ''
+      }, [dataSelection, idParams, navigate]);
+      // Si il n'existe pas on retourne une valeur null pour empêcher le rendu
+      if (!dataExists) {
+            return null;
+      }
+
       const name = dataSelection[0].host.name.split(' ');
-      // Récupération du nombre d'étoile pour notre logique
       const ratingNumber = dataSelection[0].rating;
-      // Récupération de la description pour collapse
       const description = dataSelection[0].description;
-      // Récupération des équipements pour collapse
       const equipments = dataSelection[0].equipments;
 
       return (

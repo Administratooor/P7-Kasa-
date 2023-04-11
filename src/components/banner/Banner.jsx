@@ -10,8 +10,8 @@ const Banner = () => {
       // On surveille l'emplacement actuel avec le hook useEffect
       useEffect(() => {
             setIsAboutPage(pathname === '/about');
-            /* On passe pathname en dépendance du hook qui se déclenchera
-             à chaque fois que sa valeur change */
+            /* On passe pathname en dépendance du hook qui se déclenchera 
+            que lorsque que sa valeur change */
       }, [pathname]);
 
       return (

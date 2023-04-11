@@ -8,9 +8,9 @@ export default function Slider({ imageSlider }) {
       de l'image actuellement affichée dans le slider.*/
       const [pictureIndex, setPictureIndex] = useState(0);
 
-      // Fonction qui est appelée lors d"un click sur flèche droite 
+      // Fonction qui est appelée lors d"un click sur flèche droite
       const handleNextSlide = () => {
-            // Déclaration de newIndex pour calculer le nouvel index 
+            // Déclaration de newIndex pour calculer le nouvel index
             let newIndex = pictureIndex + 1;
             /* Si le pictureIndex est sup ou égal à la valeur/longueur du tableau
             alors on remet l'index à zéro */

@@ -16,7 +16,10 @@ root.render(
                   <Route exact path="/About" element={<About />} />
                   {/* Rendre la page 404 en cas d'erreur URL */}
                   <Route exact path="*" element={<NotFound />} />
+                  {/* <Route
+                        path="*"
+                        element={<Navigate to="/notFound" replace />}
+                  /> */}
             </Routes>
       </BrowserRouter>
 );
-
