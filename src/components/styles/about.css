@@ -3,7 +3,7 @@
       width: 100%;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
       .accomodation_collapse {
             flex-direction: column;
             gap: 20px;
@@ -11,7 +11,7 @@
       }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 767px) {
       .accomodation_collapse_about {
             width: 90%;
       }

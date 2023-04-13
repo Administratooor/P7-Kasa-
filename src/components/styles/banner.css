@@ -12,20 +12,27 @@
 }
 
 .banner_about {
-      position: relative;
       display: flex;
-      border-radius: 25px;
-      height: 223px;
-      max-width: 95%;
-      margin: 10px auto;
       background-image: url('../../assets/about_cover.png');
       background-position: center;
       background-size: cover;
+      margin: 10px auto;
+      width: 90%;
+      height: 111px;
+      border-radius: 10px;
+}
+
+@media screen and (min-width: 767px) {
+      .banner,
+      .banner_about {
+            margin: 20px auto;
+            height: 200px;
+      }
 }
 
 .banner p {
       color: rgb(255, 255, 255);
-      font-size: 20px;
+      font-size: 1.2rem;
       font-weight: 500;
       margin-left: 20px;
       width: 55%;
@@ -35,15 +42,8 @@
 }
 
 @media screen and (min-width: 767px) {
-      .banner {
-            margin: 20px auto;
-            height: 200px;
-      }
-}
-
-@media screen and (min-width: 767px) {
       .banner p {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 500;
             width: 100%;
       }

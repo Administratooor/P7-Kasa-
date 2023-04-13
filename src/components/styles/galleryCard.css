@@ -3,7 +3,7 @@
       display: flex;
       cursor: pointer;
       background: white;
-      margin: 20px auto;
+      margin: 43px auto;
       flex-direction: column;
       gap: 20px;
       border-radius: 10px;
@@ -13,10 +13,6 @@
 
 .link {
       text-decoration: none;
-}
-
-.gallery_card:hover {
-      box-shadow: 0 2px 8px rgb(0, 0, 0);
 }
 
 .dataImg {
@@ -60,6 +56,6 @@ h3 {
       .gallery_card {
             flex-direction: row;
             background-color: #f6f6f6;
-            padding: 20px 0px;
+            padding: 54px 0px;
       }
 }

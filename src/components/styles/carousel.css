@@ -30,7 +30,7 @@
       margin: 0 auto;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 767px) {
       .accomodation_description {
             display: flex;
       }
@@ -46,7 +46,7 @@ h1 {
       font-size: 36px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
       h1 {
             font-size: 18px;
       }
@@ -58,7 +58,7 @@ p {
       font-size: 18px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
       p {
             font-size: 14px;
       }
@@ -80,9 +80,20 @@ button {
 .host_information_block {
       display: flex;
       margin: 17px auto;
-      width: 90%;
+      width: 100%;
       flex-direction: row-reverse;
       justify-content: space-between;
+      align-items: center;
+}
+
+@media screen and (min-width: 767px) {
+      .host_information_block {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 0 auto;
+            width: 90%;
+      }
 }
 
 .host_information {
@@ -91,7 +102,7 @@ button {
       margin-bottom: 45px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
       .host_information {
             margin-bottom: 0;
       }
@@ -112,33 +123,8 @@ button {
       padding-top: 10px;
 }
 
-@media screen and (min-width: 750px) {
-      .host_information_block {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            margin: 0 auto;
-            width: 90%;
-      }
-}
-
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 767px) {
       .host_stars img {
             width: 24px;
       }
 }
-
-@media screen and (min-width: 750px) {
-      .host_information_block {
-            margin: 0 auto;
-            width: 30%;
-            display: flex;
-      }
-}
-
-/* @media screen and (min-width: 750px) {
-      .host_information > div {
-            width: 18px;
-            display: block;
-      }
-} */
