@@ -8,7 +8,7 @@
       height: 300px;
       border-radius: 10px;
       margin: 10px auto;
-      background: round;
+      background: center;
 }
 
 .carousel img {
@@ -24,42 +24,57 @@
 }
 
 .accomodation_description {
-      display: flex;
       width: 90%;
-      flex-direction: column;
       color: #ff6060;
+      align-items: center;
+      margin: 0 auto;
 }
 
+@media screen and (min-width: 750px) {
+      .accomodation_description {
+            display: flex;
+      }
+}
 
 .accomodation_description_infos {
-      width: 90%;
+      width: 100%;
       margin: 0 auto;
 }
 
 h1 {
       width: 100%;
-      font-size: 18px;
+      font-size: 36px;
+}
+
+@media screen and (max-width: 750px) {
+      h1 {
+            font-size: 18px;
+      }
 }
 
 p {
       color: #ff6060;
       width: 100%;
-      font-size: 14px;
+      font-size: 18px;
+}
+
+@media screen and (max-width: 750px) {
+      p {
+            font-size: 14px;
+      }
 }
 
 button {
-      width: 91px;
-      height: 18px;
-      text-align: center;
-      margin: 5px;
+      margin: 3px;
+      padding: 3px 2px;
       background-color: #ff6060;
       border-radius: 5px;
       border: none;
       color: white;
-      font-size: 10px;
+      font-size: 14px;
       overflow: hidden;
       cursor: pointer;
-      padding: 0px;
+      font-family: 'Montserrat';
 }
 
 .host_information_block {
@@ -73,16 +88,23 @@ button {
 .host_information {
       display: flex;
       align-items: center;
+      margin-bottom: 45px;
+}
+
+@media screen and (max-width: 750px) {
+      .host_information {
+            margin-bottom: 0;
+      }
 }
 
 .host_information img {
-      width: 32px;
+      width: 64px;
       border-radius: 50%;
 }
 
 .host_information span {
       padding-right: 5px;
-      font-size: 12px;
+      font-size: 18px;
 }
 
 .host_stars img {
@@ -108,11 +130,9 @@ button {
 
 @media screen and (min-width: 750px) {
       .host_information_block {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
             margin: 0 auto;
-            width: 90%;
+            width: 30%;
+            display: flex;
       }
 }
 

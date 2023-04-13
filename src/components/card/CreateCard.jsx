@@ -4,7 +4,7 @@ import '../styles/galleryCard.css';
 // Le composant prend 3 propriétés en entrée
 export default function Card({ id, title, cover }) {
       return (
-            <div>
+            <div className='gallery_card_block'>
                   {/* On crée un lien avec le composant Link en utilisant le système de routage  */}
                   <Link className="link" to={`/location/${id}`}>
                         <img src={cover} alt={title} className="dataImg" />

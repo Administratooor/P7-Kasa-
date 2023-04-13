@@ -2,6 +2,7 @@ import React from 'react';
 import Collapse from '../collapse/Collapse';
 import aboutData from '../../data/about.js';
 import '../styles/collapse.css';
+import '../styles/about.css';
 export default function About() {
       const dataSelection = aboutData.map((data) => data);
 
@@ -14,17 +15,17 @@ export default function About() {
 
       //   const fiabilité = dataSelection[0].Fiabilité;
       return (
-            <div className="accomodation_collapse">
-                  <div className="accomodation_collapse_item">
+            <div className="accomodation_collapse_about">
+                  <div className="accomodation_collapse_about">
                         <Collapse title={'Fiabilité'} content={fiability} />
                   </div>
-                  <div className="accomodation_collapse_item">
+                  <div className="accomodation_collapse_about">
                         <Collapse title={'Respect'} content={respect} />
                   </div>
-                  <div className="accomodation_collapse_item">
+                  <div className="accomodation_collapse_about">
                         <Collapse title={'Service'} content={service} />
                   </div>
-                  <div className="accomodation_collapse_item">
+                  <div className="accomodation_collapse_about">
                         <Collapse title={'Securite'} content={securite} />
                   </div>
             </div>

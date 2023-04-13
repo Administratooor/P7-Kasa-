@@ -4,7 +4,7 @@ import Card from '../card/CreateCard';
 export default function Gallery() {
       return (
             <main>
-                  <div className="GalleryCard">
+                  <div className="gallery_card">
                         {datas.map((data) => {
                               return (
                                     <Card
