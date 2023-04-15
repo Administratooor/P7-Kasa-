@@ -15,7 +15,7 @@ export default function About() {
 
       //   const fiabilité = dataSelection[0].Fiabilité;
       return (
-            <div className="accomodation_collapse_about">
+            <div>
                   <div className="accomodation_collapse_about">
                         <Collapse title={'Fiabilité'} content={fiability} />
                   </div>

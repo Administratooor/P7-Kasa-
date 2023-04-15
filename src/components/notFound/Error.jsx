@@ -3,7 +3,6 @@ import '../styles/error.css';
 
 export default function TextZone() {
       const host = window.location.origin;
-      console.log(host);
       return (
             <main>
                   <div className="textZone">
@@ -16,13 +15,12 @@ export default function TextZone() {
                         </div>
                         <div>
                               <p className="redirection_home">
-                                    {' '}
                                     <a href={host}>
                                           Retrouver nous sur la page d'accueil.
-                                    </a>{' '}
+                                    </a>
                               </p>
                         </div>
-                  </div>{' '}
+                  </div>
             </main>
       );
 }

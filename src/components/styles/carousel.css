@@ -8,7 +8,7 @@
       height: 300px;
       border-radius: 10px;
       margin: 10px auto;
-      background: center;
+      background-size: 100% 100%;
 }
 
 .carousel img {
@@ -24,7 +24,7 @@
 }
 
 .accomodation_description {
-      width: 90%;
+      width: 100%;
       color: #ff6060;
       align-items: center;
       margin: 0 auto;
@@ -67,6 +67,7 @@ p {
 button {
       margin: 3px;
       padding: 3px 2px;
+      width: 84px;
       background-color: #ff6060;
       border-radius: 5px;
       border: none;
@@ -75,6 +76,8 @@ button {
       overflow: hidden;
       cursor: pointer;
       font-family: 'Montserrat';
+      white-space: nowrap;
+      text-overflow: ellipsis;
 }
 
 .host_information_block {

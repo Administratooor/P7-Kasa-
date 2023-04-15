@@ -2,13 +2,13 @@ import React from 'react';
 import logo from '../../assets/logo_footer.png';
 import styled from 'styled-components';
 
-
-// Utilisation de style component pour le footer 
+// Utilisation de style component pour le footer
 const StyledBanner = styled.footer`
       display: flex;
       background-color: black;
       width: 100%;
       height: 169px;
+      margin: 0 auto;
       align-content: center;
       justify-content: center;
       align-items: center;

@@ -7,6 +7,7 @@ const Banner = () => {
       const [isAboutPage, setIsAboutPage] = useState(false);
       // On récupère l'emplacement actuel avec le hook useLocation
       const { pathname } = useLocation();
+
       // On surveille l'emplacement actuel avec le hook useEffect
       useEffect(() => {
             setIsAboutPage(pathname === '/about');
