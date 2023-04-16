@@ -19,6 +19,7 @@
             width: 50%;
       }
 }
+
 .arrow_up {
       transform: rotate(0deg);
       margin-right: 10px;
@@ -43,6 +44,12 @@
       background-color: #f6f6f6;
 }
 
+@media screen and (min-width: 767px) {
+      .collapse_content {
+            width: 98%;
+      }
+}
+
 .collapse_content_hidden {
       visibility: hidden;
       opacity: 0;
@@ -64,7 +71,7 @@
 .accomodation_collapse {
       display: flex;
       justify-content: space-between;
-      gap: 70px;
+      gap: 50px;
       margin: 30px auto;
       width: 99%;
 }

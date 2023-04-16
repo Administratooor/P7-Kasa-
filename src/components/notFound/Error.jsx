@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/error.css';
 
 export default function TextZone() {
@@ -15,9 +16,9 @@ export default function TextZone() {
                         </div>
                         <div>
                               <p className="redirection_home">
-                                    <a href={host}>
+                                    <Link to={host}>
                                           Retrouver nous sur la page d'accueil.
-                                    </a>
+                                    </Link>
                               </p>
                         </div>
                   </div>
