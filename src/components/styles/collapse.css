@@ -15,6 +15,12 @@
 }
 
 @media screen and (min-width: 767px) {
+      .collapse_title {
+            width: 90%;
+      }
+}
+
+@media screen and (min-width: 767px) {
       .accomodation_collapse_item {
             width: 50%;
       }
@@ -46,7 +52,7 @@
 
 @media screen and (min-width: 767px) {
       .collapse_content {
-            width: 98%;
+            width: 89%;
       }
 }
 
