@@ -1,70 +1,91 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+$ git clone https://github.com/Anthony59170/P7-Kasa-.git
+$ cd kasa-P7
+$ npm install (Installez les dépendances)
+$ npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Utilisation
 
-### `npm test`
+Création d'une interface utilisateur dynamique et réactive.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+fichier index.js :
+Ce fichier comprend notre logique de route (react-router-dom)
+"/" : Correspond à la page d'accueil
+"/location/:id" : Correspond à la page produit (dynamique)
+"/About" : Correspond à la page à propos
+"\*" : Correspond à toutes routes ( page error)
 
-### `npm run build`
+Le composant navbar : Chaque fois qu'un utilisateur clique sur un lien dans le Navbar, l'état du composant Navbar est mis à jour, ce qui déclenche un re-rendu de l'interface utilisateur pour refléter le lien actif et mettre en évidence la section du site correspondante.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Le composant banner :
+Chaque fois que le contenu du composant Banner change, l'état du composant est mis à jour, ce qui déclenche un re-rendu de l'interface utilisateur pour refléter le nouveau contenu.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Le composant collapse :
+Chaque fois qu'un utilisateur clique sur le bouton "Afficher" ou "Masquer", l'état du composant Collapse est mis à jour, ce qui déclenche un re-rendu de l'interface utilisateur pour refléter l'état actuel.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Le composant slider :
+Chaque fois qu'un utilisateur fait glisser la poignée, l'état du composant Slider est mis à jour, ce qui déclenche un re-rendu de l'interface utilisateur pour refléter la nouvelle valeur sélectionnée.
 
-### `npm run eject`
+Le composant gallery :
+Chaque fois qu'un utilisateur arrive sur le site, une gallery de logement lui est proposé.
+Celle-ci est disponible grâce à un fichier de donnés. (Le backend est en cours de réalisation)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Contactez-nous
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Si vous avez des questions, des commentaires ou des préoccupations concernant notre projet, n'hésitez pas à nous contacter. Voici comment nous contacter :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Email: contact@monprojet.com
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Téléphone: +33 6 12 34 56 78
 
-## Learn More
+Adresse: 123 rue du Projet, 75001 Paris, France
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Vous pouvez également nous suivre sur les réseaux sociaux pour rester informé des dernières mises à jour et des nouvelles fonctionnalités du projet :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Twitter: @monprojet
 
-### Code Splitting
+Facebook: /monprojet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Instagram: @monprojet
 
-### Analyzing the Bundle Size
+Nous sommes toujours heureux de recevoir des commentaires et des suggestions de la part de notre communauté d'utilisateurs. N'hésitez pas à nous contacter à tout moment et nous ferons de notre mieux pour vous répondre rapidement.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Comment contribuer
 
-### Making a Progressive Web App
+Nous sommes ravis que vous envisagiez de contribuer à notre projet open source! Voici quelques étapes à suivre pour vous aider à démarrer :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Fork le projet. Cliquez sur le bouton "Fork" sur la page du projet pour créer une copie de notre code sur votre propre compte GitHub.
 
-### Advanced Configuration
+Clonez le projet. Utilisez la commande git clone pour cloner le projet sur votre ordinateur.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+git clone https://github.com/votre-nom-utilisateur/monprojet.git
 
-### Deployment
+Installez les dépendances. Exécutez la commande npm install pour installer toutes les dépendances nécessaires pour le projet.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+npm install
 
-### `npm run build` fails to minify
+Créez une nouvelle branche. Utilisez la commande git checkout pour créer une nouvelle branche pour votre contribution.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+git checkout -b ma-nouvelle-fonctionnalite
+
+Faites les modifications nécessaires. Modifiez le code pour ajouter votre nouvelle fonctionnalité, corriger un bogue ou améliorer une fonctionnalité existante.
+
+Effectuez un commit de vos modifications. Utilisez la commande git commit pour effectuer un commit de vos modifications.
+
+git add .
+git commit -m "Ajout de la nouvelle fonctionnalité"
+
+Poussez les modifications vers GitHub. Utilisez la commande git push pour pousser vos modifications vers votre compte GitHub.
+
+git push origin ma-nouvelle-fonctionnalite
+
+Soumettez une demande d'extraction. Sur la page du projet GitHub, cliquez sur le bouton "Compare & pull request" pour soumettre une demande d'extraction de vos modifications vers notre projet principal. Veuillez inclure une description détaillée de vos modifications dans la demande d'extraction.
+
+Une fois que vous avez soumis votre demande d'extraction, nous examinerons vos modifications et travaillerons avec vous pour les intégrer au projet. Merci de contribuer à notre projet open source!
