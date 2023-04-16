@@ -1,17 +1,15 @@
 # Getting Started with Create React App
 
-## Available Scripts
-
 In the project directory, you can run:
 
-### `npm start`
+## `npm start`
 
 $ git clone https://github.com/Anthony59170/P7-Kasa-.git
 $ cd kasa-P7
 $ npm install (Installez les dépendances)
 $ npm start
 
-### Utilisation
+## `Utilisation`
 
 Création d'une interface utilisateur dynamique et réactive.
 
@@ -37,7 +35,7 @@ Le composant gallery :
 Chaque fois qu'un utilisateur arrive sur le site, une gallery de logement lui est proposé.
 Celle-ci est disponible grâce à un fichier de donnés. (Le backend est en cours de réalisation)
 
-### Contactez-nous
+## `Contactez-nous`
 
 Si vous avez des questions, des commentaires ou des préoccupations concernant notre projet, n'hésitez pas à nous contacter. Voici comment nous contacter :
 
@@ -57,7 +55,7 @@ Instagram: @monprojet
 
 Nous sommes toujours heureux de recevoir des commentaires et des suggestions de la part de notre communauté d'utilisateurs. N'hésitez pas à nous contacter à tout moment et nous ferons de notre mieux pour vous répondre rapidement.
 
-### Comment contribuer
+## `Comment contribuer`
 
 Nous sommes ravis que vous envisagiez de contribuer à notre projet open source! Voici quelques étapes à suivre pour vous aider à démarrer :
 
