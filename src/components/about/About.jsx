@@ -3,6 +3,7 @@ import Collapse from '../collapse/Collapse';
 import aboutData from '../../data/about.js';
 import '../styles/collapse.css';
 import '../styles/about.css';
+
 export default function About() {
       const dataSelection = aboutData.map((data) => data);
 
@@ -13,7 +14,6 @@ export default function About() {
       const service = dataSelection[0].Service;
       const securite = dataSelection[0].Fiabilité;
 
-      //   const fiabilité = dataSelection[0].Fiabilité;
       return (
             <div>
                   <div className="accomodation_collapse_about">
@@ -31,5 +31,3 @@ export default function About() {
             </div>
       );
 }
-
-// EN COURS A TERMINER

@@ -4,6 +4,7 @@ import '../styles/error.css';
 
 export default function TextZone() {
       const host = window.location.origin;
+
       return (
             <main>
                   <div className="textZone">
