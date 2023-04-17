@@ -6,13 +6,16 @@ import styled from 'styled-components';
 const StyledBanner = styled.footer`
       display: flex;
       background-color: black;
-      width: 100%;
+      width: 90%;
       height: 169px;
       margin: 0 auto;
       align-content: center;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      @media screen and (max-width: 767px) {
+            width: 100%;
+          }
 `;
 
 const StyledBannerImg = styled.img`

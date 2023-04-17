@@ -8,7 +8,8 @@
       height: 300px;
       border-radius: 10px;
       margin: 10px auto;
-      background-size: 100% 100%;
+      background-size: cover;
+      background-position: center;
 }
 
 .carousel img {
@@ -67,7 +68,6 @@ p {
 button {
       margin: 3px;
       padding: 3px 2px;
-      width: 74px;
       background-color: #ff6060;
       border-radius: 5px;
       border: none;
@@ -108,7 +108,8 @@ button {
 .host_information {
       display: flex;
       align-items: center;
-      margin-bottom: 45px;
+      margin-bottom: 25px;
+      font-size: 12px;
 }
 
 @media screen and (max-width: 767px) {
@@ -122,10 +123,23 @@ button {
       border-radius: 50%;
 }
 
+@media screen and (max-width: 767px) {
+      .host_information img {
+            width: 32px;
+      }
+}
+
 .host_information span {
       padding-right: 5px;
       font-size: 18px;
 }
+
+@media screen and (max-width: 767px) {
+      .host_information span {
+            font-size: 12px;
+      }
+}
+
 
 .host_stars img {
       width: 14px;
